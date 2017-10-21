@@ -34,6 +34,18 @@ button:hover{
 	margin:auto;
 }
 
+#books-top-bar{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 100%;
+}
+#books-top-bar > div:nth-child(1){
+	margin: initial;
+}
+#books-top-bar > div:nth-child(2){
+	margin: auto;
+}
+
 .book-div-row{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

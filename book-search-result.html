@@ -16,11 +16,11 @@
     <div class="container first-cont" id="books-top-bar">
       <div>
         <h1>AIS - LMS</h1>
-        <h2>Library Books</h2>
+        <h2>Library Books - Search Results</h2>
       </div>
       <div>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search book...">
+        <input type="text" class="form-control" placeholder="Search book..." value="Mathematics 1">
         <span class="input-group-btn">
           <a class="btn btn-secondary search-book" href="book-search-result.html">Search</a>
         </span>
@@ -33,7 +33,7 @@
       <div class="book-container">
         <div class="book">
           <div class="book-image">
-            <a class="add-icon" type="button" data-toggle="modal" data-target="#"><img src="img/Take-a-Peek-new-Math-1.jpg" alt="Math 1" class="img-thumbnail"></a>
+            <a class="add-icon" type="button" data-toggle="modal" data-target="#exampleModal"><img src="img/Take-a-Peek-new-Math-1.jpg" alt="Math 1" class="img-thumbnail"></a>
           </div>
           <div class="book-overlay"></div>
         </div>
@@ -41,33 +41,10 @@
           <h3>Exploring the World of Mathematics 1</h3>
         </div>
       </div>
-      <div class="book-container">
-        <div class="book">
-          <div class="book-image">
-            <a class="add-icon" type="button" data-toggle="modal" data-target="#exampleModal"><img src="img/Take-a-Peek-new-Math-2.jpg" alt="Math 1" class="img-thumbnail"></a>
-          </div>
-          <div class="book-overlay"></div>
-        </div>
-        <div class="book-title">
-          <h3>Exploring the World of Mathematics</h3>
-        </div>
-      </div>
-      <div class="book-container">
-        <div class="book">
-          <div class="book-image">
-            <!-- Button trigger modal -->
-            <a class="add-icon" type="button" data-toggle="modal" data-target="#"><img src="img/add-circular-button.png"></a>
-          </div>
-          <div class="book-overlay"></div>
-        </div>
-        <div class="book-title">
-          <h3></h3>
-        </div>
-      </div>
     </div>
+    <div class="back-to-books" style="text-align: center;">
+      <a href="books.html" class="btn btn-primary">Go Back to Books main</a>
     </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -81,17 +58,17 @@
       </div>
       <div class="modal-body">
         <!-- FORM TO ADD BOOKS -->
-        <form id="AddNewBook" name="AddNewBook" method="post" action="BooksWithEdited.html">
+        <form id="AddNewBook" name="AddNewBook" method="post" action="books.html">
           <div class="form-group row">
             <label for="inputISBN" class="col-sm-2 col-form-label">ISBN</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputISBN" placeholder="International Standard Book Number" value="1234">
+              <input type="text" class="form-control" id="inputISBN" placeholder="International Standard Book Number" value="1233">
             </div>
           </div>
           <div class="form-group row">
             <label for="inputBooktitle" class="col-sm-2 col-form-label">Book Title</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputBooktitle" placeholder="Book Title" value="Exploring the World of Mathematics">
+              <input type="text" class="form-control" id="inputBooktitle" placeholder="Book Title" value="Exploring the World of Mathematics 1">
             </div>
           </div>
           <div class="form-group row">
@@ -135,7 +112,6 @@
             <div class="modFooter-right">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Save</button>
-                <button type="button" class="btn btn-danger">Delete</button>
             </div>
           </div>
         </form>
