@@ -1,5 +1,5 @@
 * {
-	border: 1px dotted #000;
+	/*border: 1px dotted #000;*/
 }
 .first-cont {
 	margin-top: 50px;
@@ -44,23 +44,26 @@ button:hover{
 .book-container{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 80% 20%;
+    grid-template-rows: 225px 70px;
 }
 .book{
 	margin: auto;
 }
-.book-image img{
+.book-image img, .book-image a img{
 	height: 200px;
 	max-width: auto;
 }
 .book-title{
-	
+	text-align: center;
 }
 
+a.add-icon:hover{
+	cursor: pointer;
+}
 
 .modFooter{
 	display: grid;
-	grid-template-columns: 70% 30%;
+	grid-template-columns: 50% 50%;
 	grid-template-rows: 100%;
 }
 /*// Extra small devices (portrait phones, less than 576px)*/
