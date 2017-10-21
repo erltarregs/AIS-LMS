@@ -1,0 +1,89 @@
+* {
+	border: 1px dotted #000;
+}
+.first-cont {
+	margin-top: 50px;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.pull-right{
+	text-align: right;
+}
+
+.menu-container {
+	text-align: center;
+}
+a.btn{
+	color:#fff;
+}
+a.btn:hover,
+button:hover{
+	cursor: pointer;
+}
+
+.menu-container a.btn{
+	margin: auto;
+	display: block;
+	margin-top: 40px;
+	max-width: 80%;
+}
+.container > div{
+	margin:auto;
+}
+
+.book-div-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100%;
+	grid-gap: 5px;
+}
+
+.book-container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 80% 20%;
+}
+.book{
+	margin: auto;
+}
+.book-image img{
+	height: 200px;
+	max-width: auto;
+}
+.book-title{
+	
+}
+
+
+.modFooter{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-rows: 100%;
+}
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.table-responsive{
+		display:table;
+	}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
