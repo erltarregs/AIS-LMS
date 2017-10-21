@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Books</title>
+    <title>AIS - LMS | Books</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,22 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="homepage.html">AIS Library Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="books.html">Books <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="users.html">Users</a>
+      <a class="nav-item nav-link" href="fines.html">Fines</a>
+      <a class="nav-item nav-link" href="book-suppliers.html">Book Suppliers</a>
+      <a class="nav-item nav-link" href="index.html">Logout</a>
+    </div>
+  </div>
+</nav>
+
     <div class="container first-cont" id="books-top-bar">
       <div>
         <h1>AIS - LMS</h1>
@@ -35,6 +51,7 @@
           <div class="book-image">
             <a class="add-icon" type="button" data-toggle="modal" data-target="#"><img src="img/Take-a-Peek-new-Math-1.jpg" alt="Math 1" class="img-thumbnail"></a>
           </div>
+          <small>Number of Books Available: 9</small>
           <div class="book-overlay"></div>
         </div>
         <div class="book-title">
@@ -46,6 +63,7 @@
           <div class="book-image">
             <a class="add-icon" type="button" data-toggle="modal" data-target="#exampleModal"><img src="img/Take-a-Peek-new-Math-2.jpg" alt="Math 1" class="img-thumbnail"></a>
           </div>
+          <small>Number of Books Available: 9</small>
           <div class="book-overlay"></div>
         </div>
         <div class="book-title">
@@ -126,7 +144,19 @@
           <div class="form-group row">
             <label for="inputItems" class="col-sm-2 col-form-label">No. of items</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="inputItems" placeholder="No. of books" value="10">
+              <input type="number" class="form-control" disabled="" id="inputItems" placeholder="No. of books" value="10">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputBooksBorrowed" class="col-sm-2 col-form-label">Books Borrowed</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputBooksBorrowed" placeholder="" value="1">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputBooksAvailable" class="col-sm-2 col-form-label">Books Available</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputBooksAvailable" placeholder="" value="9">
             </div>
           </div>
           <hr>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Homepage</title>
+    <title>AIS - LMS | Borrower's Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,19 +13,110 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <h1>Hello there, Student!</h1>
-
+    <div class="container first-cont">
+        <h1>AIS - Library Management System</h1>
+        <h4 class="pull-right" style="margin-bottom:0;">Hello there, <span title="userID: S-0001">Jose!</span></h4>
+        <div class="pull-right"><a href="index.html">Logout</a></div>
+        <h5 class="pull-right">Today's date is: Sun 10/22/2017</h5>
+        <h5 class="pull-right"></h5>
+    </div>
     
+    <div class="container first-cont">
+        <div class="headings">
+            <div class="heading-left">
+                <h2>Your current summary:</h2>
+                <div>Borrowed books: <span style="color: blue;">2</span></div>
+                <div>Overdue books: <b><span class="overdue">1</span></b></div>
+            </div>
+            <div class="heading-right">
+                <a class="add-icon btn btn-primary" data-toggle="modal" data-target="#exampleModal">Reserve a Book</a>
+            </div>
+        </div>
+        &nbsp;
+        <h2>Your Borrowed books:</h2>
+            <table class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Book Title</th>
+                        <th>Date Borrowed</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1234</td>
+                        <td>Exploring the World of Mathematics 2</td>
+                        <td>10-20-2017</td>
+                        <td>10-23-2017</td>
+                    </tr>
+                    <tr style="background-color: #ff6666;">
+                        <td>1233</td>
+                        <td>Exploring the World of Mathematics 1</td>
+                        <td>10-19-2017</td>
+                        <td>10-20-2017</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="AddNewBook" name="AddNewBook" method="post" action="books.html">
+          <div class="form-group row">
+            <label for="inputISBN" class="col-sm-2 col-form-label">ISBN</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputISBN" placeholder="International Standard Book Number" value="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputBooktitle" class="col-sm-2 col-form-label">Book Title</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputBooktitle" placeholder="Book Title" value="">
+            </div>
+          </div>
+          <hr>
+          <div class="modFooter">
+            <div class="modFooter-left"></div>
+            <div class="modFooter-right">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Reserve</button>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="js/user-switch.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <script src="js/popper.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
-    <script src="js/bootstrap.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
   </body>
 </html>

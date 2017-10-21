@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>AIS - LMS | Book Fines</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="homepage.html">AIS Library Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="books.html">Books</a>
+      <a class="nav-item nav-link" href="users.html">Users</a>
+      <a class="nav-item nav-link active" href="fines.html">Fines <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="book-suppliers.html">Book Suppliers</a>
+      <a class="nav-item nav-link" href="index.html">Logout</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="container first-cont" id="books-top-bar">
+      <div>
+        <h1>AIS - LMS</h1>
+        <h2>Book Fines</h2>
+      </div>
+      <div><!-- Overdue books: 0 --></div>
+    </div>
+
+    <div class="container first-cont">
+      Overdue books: 0<br>
+      <hr>
+      Borrowed Books:<br>&nbsp;
+      <table class="table table-responsive table-hover">
+        <thead>
+          <tr>
+            <th>ISBN</th>
+            <th>Book Title</th>
+            <th>Borrower ID</th>
+            <th>Borrower Name</th>
+            <th>Date Borrowed</th>
+            <th>Return Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1233</td>
+            <td>Exploring the World of Mathematics 2</td>
+            <td>S-001</td>
+            <td>Rizal, Jose E.</td>
+            <td>10-20-2017</td>
+            <td>10-23-2017</td>
+          </tr>
+          <tr style="background-color: #ff6666;">
+            <td>1233</td>
+            <td>Exploring the World of Mathematics 1</td>
+            <td>S-001</td>
+            <td>Rizal, Jose E.</td>
+            <td>10-19-2017</td>
+            <td>10-20-2017</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/user-switch.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/popper.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
